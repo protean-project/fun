@@ -3,20 +3,6 @@ name: Greeting from Mona
 on: pull_request 
 
 jobs:
-  my-job:
-    name: My Job
-    runs-on: ubuntu-latest
-    steps:
-    - name: Print a greeting
-      env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
-      run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-        sleep 60
-
   other-job1:
     name: Other  Job
     runs-on: ubuntu-latest
@@ -29,7 +15,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job2:
     name: Other  Job
@@ -43,7 +29,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job3:
     name: Other  Job
@@ -57,7 +43,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job4:
     name: Other  Job
@@ -71,7 +57,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job5:
     name: Other  Job
@@ -85,7 +71,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job6:
     name: Other  Job
@@ -99,7 +85,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job7:
     name: Other  Job
@@ -113,7 +99,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job8:
     name: Other  Job
@@ -127,7 +113,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job9:
     name: Other  Job
@@ -141,7 +127,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job10:
     name: Other  Job
@@ -155,7 +141,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job11:
     name: Other  Job
@@ -169,7 +155,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job12:
     name: Other  Job
@@ -183,7 +169,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job13:
     name: Other  Job
@@ -197,7 +183,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job14:
     name: Other  Job
@@ -211,7 +197,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job15:
     name: Other  Job
@@ -225,7 +211,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job16:
     name: Other  Job
@@ -239,7 +225,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job17:
     name: Other  Job
@@ -253,7 +239,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job18:
     name: Other  Job
@@ -267,7 +253,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job19:
     name: Other  Job
@@ -281,7 +267,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job20:
     name: Other  Job
@@ -295,7 +281,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job21:
     name: Other  Job
@@ -309,7 +295,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job22:
     name: Other  Job
@@ -323,7 +309,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job23:
     name: Other  Job
@@ -337,7 +323,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job24:
     name: Other  Job
@@ -351,7 +337,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job25:
     name: Other  Job
@@ -365,7 +351,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job26:
     name: Other  Job
@@ -379,7 +365,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job27:
     name: Other  Job
@@ -393,7 +379,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job28:
     name: Other  Job
@@ -407,7 +393,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job29:
     name: Other  Job
@@ -421,7 +407,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job30:
     name: Other  Job
@@ -435,7 +421,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job31:
     name: Other  Job
@@ -449,7 +435,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job32:
     name: Other  Job
@@ -463,7 +449,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job33:
     name: Other  Job
@@ -477,7 +463,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job34:
     name: Other  Job
@@ -491,7 +477,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job35:
     name: Other  Job
@@ -505,7 +491,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job36:
     name: Other  Job
@@ -519,7 +505,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job37:
     name: Other  Job
@@ -533,7 +519,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job38:
     name: Other  Job
@@ -547,7 +533,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job39:
     name: Other  Job
@@ -561,7 +547,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job40:
     name: Other  Job
@@ -575,7 +561,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job41:
     name: Other  Job
@@ -589,7 +575,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job42:
     name: Other  Job
@@ -603,7 +589,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job43:
     name: Other  Job
@@ -617,7 +603,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job44:
     name: Other  Job
@@ -631,7 +617,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job45:
     name: Other  Job
@@ -645,7 +631,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job46:
     name: Other  Job
@@ -659,7 +645,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job47:
     name: Other  Job
@@ -673,7 +659,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job48:
     name: Other  Job
@@ -687,7 +673,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job49:
     name: Other  Job
@@ -701,7 +687,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job50:
     name: Other  Job
@@ -715,7 +701,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job51:
     name: Other  Job
@@ -729,7 +715,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job52:
     name: Other  Job
@@ -743,7 +729,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job53:
     name: Other  Job
@@ -757,7 +743,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job54:
     name: Other  Job
@@ -771,7 +757,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job55:
     name: Other  Job
@@ -785,7 +771,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job56:
     name: Other  Job
@@ -799,7 +785,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job57:
     name: Other  Job
@@ -813,7 +799,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job58:
     name: Other  Job
@@ -827,7 +813,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job59:
     name: Other  Job
@@ -841,7 +827,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job60:
     name: Other  Job
@@ -855,7 +841,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job61:
     name: Other  Job
@@ -869,7 +855,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job62:
     name: Other  Job
@@ -883,7 +869,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job63:
     name: Other  Job
@@ -897,7 +883,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job64:
     name: Other  Job
@@ -911,7 +897,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job65:
     name: Other  Job
@@ -925,7 +911,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job66:
     name: Other  Job
@@ -939,7 +925,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job67:
     name: Other  Job
@@ -953,7 +939,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job68:
     name: Other  Job
@@ -967,7 +953,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job69:
     name: Other  Job
@@ -981,7 +967,7 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
   other-job70:
     name: Other  Job
@@ -995,5 +981,5 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo    .
-        sleep 120 
+        sleep 600 
 
