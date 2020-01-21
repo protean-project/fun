@@ -14,7 +14,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: counter
-        key: README.md
+        key: ${{ hashFiles('README.md') }}
     - name: Increment 
       if: steps.cache-counter.outputs.cache-hit != true
       run: |
