@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Cache counter
       id: cache-counter
-      useas: actions/cache@v1
+      uses: actions/cache@v1
       with:
         path: counter
         key: README.md
