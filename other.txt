@@ -2,3 +2,5 @@ blah
 blah
 blah
 blah
+foo git commit -am test caching
+foo
