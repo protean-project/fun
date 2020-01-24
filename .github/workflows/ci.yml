@@ -10,5 +10,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Run action
-      uses: .github/actions/testme
+      uses: ./.github/actions/testme
    
