@@ -1,0 +1,8 @@
+name: "Println"
+inputs:
+   message:
+     description: 'The message to write'
+     required: true
+runs:
+  using: 'bash'
+  main: 'test.sh'
