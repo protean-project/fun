@@ -12,4 +12,7 @@ jobs:
     - name: Run action
       run: |
         netstat -lan
+        sudo service mysql stop || true
+        netstat -lan
+
    
