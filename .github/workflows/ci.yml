@@ -1,4 +1,4 @@
-name: Counting
+name: Actions
 
 on: [push, pull_request]
 
@@ -9,18 +9,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Cache counter
-      id: cache-counter
-      uses: actions/cache@v1
-      with:
-        path: counter
-        key: ${{ hashFiles('README.md') }}
-    - name: Increment 
-      if: steps.cache-counter.outputs.cache-hit != true
-      run: |
-        bash foo.sh 
-    - name: Display
-      run: |
-        echo -n "Current count is = "
-        cat counter/counter
-        echo
+    - name: Run action
+      uses: .github/actions/testme
+   
