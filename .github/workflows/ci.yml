@@ -15,9 +15,15 @@ jobs:
       uses: actions/checkout@v2
     - name: Run action
       env:
-        testit: ${{toJson(job)}}
+        testit: ${{toJson(runner)}}
+        testit2: ${{toJson(steps)}} 
+        testit3: ${{toJson(github)}} 
       run: |
         echo $LANG
         echo $testit
+        echo $testit2
+        echo $testit3
+
+
 
    
