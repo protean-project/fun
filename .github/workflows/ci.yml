@@ -7,14 +7,15 @@ env:
 
 jobs:
   other-job1:
-    env:
-      testit: ${{job.name}}
+   
     name: Other  Job
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Run action
+      env:
+        testit: ${{job.name}}
       run: |
         echo $LANG
         echo $testit
