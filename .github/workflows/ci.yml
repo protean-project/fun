@@ -14,5 +14,6 @@ jobs:
     - name: Run action
       run: |
         echo $LANG
+        echo ${{job.name}}
 
    
