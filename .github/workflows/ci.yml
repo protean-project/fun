@@ -3,6 +3,7 @@ name: Actions
 on: [push, pull_request]
 env:
   LANG: en_US.UTF-8 
+  testit: ${{job.name}} 
 
 jobs:
   other-job1:
@@ -14,6 +15,6 @@ jobs:
     - name: Run action
       run: |
         echo $LANG
-        echo ${{job.name}}
+        echo $testit
 
    
