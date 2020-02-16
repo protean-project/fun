@@ -3,10 +3,12 @@ name: Actions
 on: [push, pull_request]
 env:
   LANG: en_US.UTF-8 
-  testit: ${{job.name}} 
+
 
 jobs:
   other-job1:
+    env:
+      testit: ${{job.name}}
     name: Other  Job
     runs-on: ubuntu-latest
     steps:
