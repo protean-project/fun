@@ -15,6 +15,10 @@ jobs:
         category: [main, data1, data2]
         include:
           - category: main
+            test: >
+               one
+               two
+               three
             mysql: true
           - category: data1
             postgres: true
@@ -30,7 +34,11 @@ jobs:
     - name: Start Postgres?
       if: matrix.postgres
       run: echo "LAUNCH POSTGRES!!"
-    
+    - name: Echo Stuff
+      env:
+        MSG: ${{matrix.test}}  
+      run: |
+        echo $MSG
 
 
 
