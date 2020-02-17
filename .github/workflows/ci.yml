@@ -8,7 +8,7 @@ env:
 jobs:
   other-job1:
    
-    name: Other  Job
+    name: Other ${{matrix.category}}
     runs-on: ubuntu-latest
     strategy:
       matrix:
