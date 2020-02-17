@@ -10,19 +10,27 @@ jobs:
    
     name: Other  Job
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        category: [main, data1, data2]
+        include:
+          - category: main
+            mysql: true
+          - category: data1
+            postgres: true
+          - category: data2
+            mysql: true
+            postgres: true
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Run action
-      env:
-        testit: ${{toJson(runner)}}
-        testit2: ${{toJson(steps)}} 
-        testit3: ${{toJson(github)}} 
-      run: |
-        echo $LANG
-        echo $testit
-        echo $testit2
-        echo $testit3
+    - name: Start Mysql?
+      if: ${matrix.mysql}
+      run: echo "LAUNCH MYSQL!!
+    - name: Start Postgres?
+      if: ${matrix.postgres}
+      run: echo "LAUNCH POSTGRES!!
+    
 
 
 
