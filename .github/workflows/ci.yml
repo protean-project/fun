@@ -26,10 +26,10 @@ jobs:
       uses: actions/checkout@v2
     - name: Start Mysql?
       if: matrix.mysql
-      run: echo "LAUNCH MYSQL!!
+      run: echo "LAUNCH MYSQL!!"
     - name: Start Postgres?
       if: matrix.postgres
-      run: echo "LAUNCH POSTGRES!!
+      run: echo "LAUNCH POSTGRES!!"
     
 
 
