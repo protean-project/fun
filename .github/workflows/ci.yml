@@ -42,6 +42,7 @@ jobs:
         MSG: ${{matrix.test}}  
       run: |
         echo $MSG
+        sleep 70
 
 
 
