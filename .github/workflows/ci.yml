@@ -7,8 +7,8 @@ env:
 
 jobs:
   other-job1:
-   
     name: Other ${{matrix.category}}
+    timeout-minutes: ${{matrix.timeout}}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,11 +20,14 @@ jobs:
                two
                three
             mysql: true
+            timeout: 1
           - category: data1
             postgres: true
+            timeout: 4
           - category: data2
             mysql: true
             postgres: true
+            timeout: 5
     steps:
     - name: Checkout
       uses: actions/checkout@v2
