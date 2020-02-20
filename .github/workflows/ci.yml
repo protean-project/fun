@@ -8,6 +8,10 @@ env:
 jobs:
   foo:
     if: "false"
+    steps:
+      - go:
+        run: echo hello
+        
   
   other-job1:
     needs: foo
