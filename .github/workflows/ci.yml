@@ -12,16 +12,18 @@ jobs:
     steps:
       - run: sleep 10
      
-  foo:
-    if: false
-    needs: blah
+  footrue:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 1
+  foofalse:
     runs-on: ubuntu-latest
     steps:
       - run: sleep 10
         
   
   other-job1:
-    needs: foo
+    needs: foo${{github.repository == protean-project/fun}}
     if: failure() == false
     name: Other ${{matrix.category}}
     timeout-minutes: ${{matrix.timeout}}
