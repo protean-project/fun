@@ -6,7 +6,11 @@ env:
 
 
 jobs:
+  foo:
+    if: "false"
+  
   other-job1:
+    needs: foo
     name: Other ${{matrix.category}}
     timeout-minutes: ${{matrix.timeout}}
     runs-on: ubuntu-latest
