@@ -8,6 +8,7 @@ env:
 jobs:
   foo:
     if: "false"
+    runs-on: ubuntu-latest
     steps:
       - run: echo hello
         
