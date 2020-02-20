@@ -9,8 +9,7 @@ jobs:
   foo:
     if: "false"
     steps:
-      - go:
-        run: echo hello
+      - run: echo hello
         
   
   other-job1:
