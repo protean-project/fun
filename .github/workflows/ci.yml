@@ -3,18 +3,18 @@ name: Actions
 on: [push, pull_request]
 env:
   LANG: en_US.UTF-8 
+  dep: foo 
 
 
 jobs:
   foo:
-    if: "false"
     runs-on: ubuntu-latest
     steps:
       - run: echo hello
         
   
   other-job1:
-    needs: foo
+    needs: ${{env.dep}}
     name: Other ${{matrix.category}}
     timeout-minutes: ${{matrix.timeout}}
     runs-on: ubuntu-latest
