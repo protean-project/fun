@@ -6,13 +6,22 @@ env:
   par: 1  
 
 
-jobs: 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: blah
+        env: 
+          foo: ${{toJson(github.event)}}
+        run: echo $foo    
+
   other-job1:
+    if: false
     name: Other ${{matrix.category}}
     timeout-minutes: ${{matrix.timeout}}
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: ${{env.par}}
       matrix:
         category: [main, data1, data2]
         include:
