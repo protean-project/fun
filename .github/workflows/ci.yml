@@ -6,8 +6,16 @@ env:
 
 
 jobs:
+  
+  blah:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10
+        :
+     
   foo:
-    if: true
+    if: false
+    needs: blah
     runs-on: ubuntu-latest
     steps:
       - run: sleep 10
