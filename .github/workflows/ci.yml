@@ -1,6 +1,10 @@
 name: Actions
 
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened, edited]
+
 env:
   LANG: en_US.UTF-8 
   par: 1  
