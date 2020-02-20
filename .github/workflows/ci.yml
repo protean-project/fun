@@ -15,6 +15,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     if: "github.event.pull_request.draft == false && \
+         github.event.pull_request.state != closed && \
          contains(github.event.pull_request.title, 'wip ') == false && \
          (github.event.action != 'edited' || contains(github.event.changes.title.from, 'wip '))"
     steps:
