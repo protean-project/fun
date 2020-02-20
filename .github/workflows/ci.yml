@@ -3,32 +3,16 @@ name: Actions
 on: [push, pull_request]
 env:
   LANG: en_US.UTF-8 
+  par: 1  
 
 
-jobs:
-  
-  blah:
-    runs-on: ubuntu-latest
-    steps:
-      - run: sleep 10
-     
-  footrue:
-    runs-on: ubuntu-latest
-    steps:
-      - run: sleep 1
-  foofalse:
-    runs-on: ubuntu-latest
-    steps:
-      - run: sleep 10
-        
-  
+jobs: 
   other-job1:
-    needs: foo${{github.repository == protean-project/fun}}
-    if: failure() == false
     name: Other ${{matrix.category}}
     timeout-minutes: ${{matrix.timeout}}
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: ${{env.par}}
       matrix:
         category: [main, data1, data2]
         include:
