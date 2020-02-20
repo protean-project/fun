@@ -17,8 +17,11 @@ jobs:
     steps:
       - name: blah
         env: 
-          foo: ${{toJson(github.event)}}
-        run: echo $foo    
+          foo: ${{toJson(github.event.changes.title.from)}}
+          new:  ${{toJson(github.pull_request.title)}}
+        run: |
+          echo $foo 
+          echo $new 
 
   other-job1:
     if: false
