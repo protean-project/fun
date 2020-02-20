@@ -3,7 +3,7 @@ name: Actions
 on: 
   push:
   pull_request:
-    types: [assigned, opened, synchronize, reopened, ready_for_review]
+    types: [assigned, opened, synchronize, reopened, ready_for_review, edited]
 
 env:
   LANG: en_US.UTF-8 
